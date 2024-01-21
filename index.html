@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus 400 Schedule</title>
+
+  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script type='text/javascript' src="table.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+</head>
+<body onload='main()'>
+
+  <div id="title">
+    <a href="#">Bus 400 Schedule</a>
+  </div>
+
+
+
+
+<div class="content"> 
+  <h2>Select Source</h2>
+  <div id="course-controls">
+
+
+    <label for="station-picker">Starting Station: </label>
+    <input list="station-picker" name="station-picker" value="IST-Austria" class="station-picker">
+    <datalist id="station-picker">
+    </datalist>
+    <br>
+    <div class="button-list">
+      <button class="code-btn" onclick="addCourse();">View Timings</button>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <div id="selected-courses" hidden>
+    Selected courses: 
+  </div>
+</div>
+
+<div class="content">
+  <div id="selected-source">
+  Showing Buses From:
+</div>
+</div>  
+  <div class="tbl-container">
+    <table id='tbl'></table>
+  </div>
+
+
+
+  <div class="content">
+    <h2>Description</h2>
+    <ul>
+      <li>Showing <a href="https://ist.ac.at/wp-content/uploads/2021/03/Bus400-January2021.pdf">Bus 400 (Vienna)</a> timings from
+      <ul>
+        <li><emph>Wien Heiligenstadt</emph> in the direction Maria Gugging</li>
+        <li><emph>Maria Gugging - IST Austria</emph> in the direction Heiligenstadt</li>
+      </ul></li>
+     </ul>
+  </div>
+
+
+
+  <div id="reftable" hidden>
+5:28|5:55|5:14|5:34|5:44,5:19|5:49,
+6:08|6:38|6:04|6:14|6:34|6:44,6:00|6:30|6:14|6:44|,6:30|6:14|
+7:08|7:38|7:04|7:14|7:34|7:44,7:10|7:40|7:14|7:44|,7:30|7:14|
+8:08|8:38|8:04|8:14|8:34,8:10|8:40|8:14|8:44|,8:30|8:14|
+9:10|9:40|9:14|9:44|,9:10|9:40|9:14|9:44|,9:30|9:14|
+10:10|10:40|10:14|10:44|,10:10|10:40|10:14|10:44|,10:00|10:30|10:14|10:44|
+11:10|11:40|11:14|11:44|,11:10|11:40|11:14|11:44|,11:00|11:30|11:14|11:44|
+12:10|12:40|12:14|12:44|,12:10|12:40|12:14|12:44|,12:00|12:30|12:14|12:44|
+13:10|13:40|13:14|13:44|,13:10|13:40|13:14|13:44|,13:00|13:30|13:14|13:44|
+14:10|14:40|14:14|14:44,14:10|14:40|14:14|14:44|,14:00|14:30|14:14|14:44|
+15:06|15:36|15:14|15:44|,15:10|15:40|15:14|15:44|,15:00|15:30|15:14|15:44|
+16:06|16:36|16:04|16:14|16:34|16:44|,16:10|16:40|16:14|16:44|,16:00|16:30|16:14|16:44|
+17:06|17:36|17:04|17:34|17:44|,17:10|17:40|17:14|17:44|,17:00|17:30|17:14|17:44|
+18:06|18:36|18:04|18:34|18:44|,18:10|18:40|18:14|18:44|,18:00|18:30|18:14|18:44|
+19:06|19:38|19:04|19:34|,19:00|19:30|19:14|19:39|,19:00|19:30|19:14|19:354|
+20:00|20:30|20:09|20:39|,20:00|20:30|20:09|20:39|,20:00|20:09|
+21:00|21:30|21:09|21:39|,21:00|21:30|21:09|21:39|,21:00|21:09|
+22:00|22:30|22:09|22:39|,22:00|22:30|22:09|22:39|,22:00|22:09|
+23:00|23:30|23:09|23:39|,23:00|23:30|23:09|23:39|,23:00|23:09|
+0:00|0:47|0:09|,0:00|0:47|0:09|,0:00|0:47|0:09|
+
+</div>
+
+<div id="srctable" hidden>Heiligenstadt|Maria Gugging (ISTA)
+</div>
+
+  <footer>
+    <a href="https://en.wikipedia.org/wiki/Bus"><button><i class="fa fa-bus" aria-hidden="true"></i></button></a>
+    <p>Last updated: 21-01-2024</p>
+  </footer> 
+ </body>
+</html>

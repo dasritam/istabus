@@ -1,0 +1,476 @@
+/*Font Faces are imported for domtoimage to work*/
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3gTD_u50.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3g3D_u50.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3gbD_u50.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3gfD_u50.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/* cyrillic-ext */
+    @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v14/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWkU1Z4Y.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v14/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFU0U1Z4Y.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* hebrew */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v14/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFVUU1Z4Y.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v14/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWUU1Z4Y.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v14/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0U1.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  
+  :root{
+    --white1: #ffffff;
+    --white2: #dddddd;
+    --white3: #f3f3f3;
+    --color: #45a45b;
+    --bgcol: #a0f2aebc;
+    --bgcol2: #5fbe79d7;
+}
+
+/* :root{
+    --white1: #ffffff;
+    --white2: #dddddd;
+    --white3: #f3f3f3;
+    --color: #40A7F0;
+    --bgcol: #B3DCF9;
+    --bgcol2: #2D75A8;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: thin;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background: var(--bgcol2) fixed;
+    background-size: cover;
+}
+
+
+.tbl-container {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#tbl {
+    background-color: var(--bgcol);
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 15%;
+}
+
+tr th:first-child{
+    width: 10%;
+}
+
+#tbl thead tr{
+    background-color: var(--color);
+    color: var(--white1);
+}
+
+#tbl tbody td {
+    font-family: "Rubik";
+}
+
+#tbl tbody tr {
+    border-bottom: 1px solid var(--white2);
+    transition: 0.3s color ease;
+}
+
+#tbl tbody tr:nth-of-type(even) {
+    background-color: var(--white3);
+}
+
+#tbl tbody tr:last-of-type {
+    border-bottom: 2px solid var(--color);
+}
+
+/* #tbl tbody tr:nth-of-type(even):hover{
+    color: var(--color);
+    transition: 0.3s color ease;
+}
+
+#tbl tbody tr:nth-of-type(odd):hover{
+    color: var(--white1);
+    transition: 0.3s color ease;
+} */
+
+#title{
+    padding: 10px 0;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#title a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s color ease;
+}
+
+#title a:hover {
+    color: var(--color);
+}
+
+
+#course-controls{
+    margin: auto;
+}
+
+.station-picker{
+    border-radius: 10px;
+    height:30px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.source-picker{
+    border-radius: 10px;
+    height:30px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.code-btn, .export-btn{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 7px 15px;
+    transition: all 0.3s ease;
+    margin: 20px 5px 0px 5px;
+    cursor: pointer;
+
+    background-color: transparent;
+    border: 2px solid var(--white1);
+    color: var(--white1)
+}
+
+.code-btn:hover, .export-btn:hover{
+    background-color: var(--bgcol2);
+    border-color: var(--bgcol2);
+    transition: all 0.3s ease;
+}
+
+.button-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#selected-courses {
+    margin-top: 20px;  
+    color: var(--white1);
+    font-size: 18px;
+}
+
+#selected-source {
+    margin-top: 0px;  
+    color: var(--white1);
+    font-size: 18px;
+}
+
+footer button {
+    color: #fbfcfd;
+    background: transparent;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+i.fa {
+    font-size: 30px;
+
+    height: 30px;
+    width: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--white1);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px 0;
+}
+
+footer p {
+    margin: auto;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.content{
+    width: 90%;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px 30px;
+
+    font-family: "Rubik", sans-serif;
+    font-size: 1em;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: var(--white1);
+    margin-bottom: 20px;
+}
+
+.content p{
+    margin-top: 20px;
+}
+
+.content a{
+    color: var(--white1);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.content a:hover{
+    color: var(--color);
+}
+
+.content li {
+    margin: 15px;
+    line-height: 1.3em;
+}
+
+.content emph {
+    color: var(--white1);
+}
+
+.content hr{
+    border-bottom: 2px solid var(--white1);
+    margin-bottom: 15px;
+}
+
+.content label{
+    color: var(--white1);
+    font-size: 18px;
+}
+
+#color-picker{
+    float: right;
+    background-color: transparent;
+}
+
+#export-label{
+    color: var(--white1);
+    font-size: 18px;
+}
+
+#export-list{
+    display: flex;
+}
+
+#export-list ul{
+    margin: auto;    
+}
+
+#export-list li{
+    display: inline;
+    margin: 0px;
+}
+
+#png-export{
+    margin-right: 0px;
+    border-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#csv-export{
+    margin-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#csv-export:hover{
+    border-left-color: var(--white1);
+}
+
+
+@media screen and (max-width:720px){
+    
+    body {
+        background: var(--bgcol2) repeat-y;
+    }
+
+    #tbl{
+        width: 650px;
+    }
+
+    .tbl-container{
+        overflow-x: scroll;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:450px){
+
+    .code-btn{
+        font-size: 12px;
+        margin-right: 1px;
+        margin-left: 6px;
+        padding: 5px 6px;
+        border-radius: 10px;
+    }
+
+    .export-btn{
+        font-size: 12px;
+    }
+
+    .button-list{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .station-picker{
+        border: 20px;
+        width: 100px;
+    }
+
+    .source-picker{
+        border: 20px;
+        width: 100px;
+    }
+    
+    .content label{
+        font-size: 16px;
+    }    
+
+    #selected-courses{
+        font-size: 16px;
+    }
+
+    #selected-source{
+        font-size: 16px;
+    }
+
+    #export-label{
+        font-size: 16px;
+    }
+
+}
